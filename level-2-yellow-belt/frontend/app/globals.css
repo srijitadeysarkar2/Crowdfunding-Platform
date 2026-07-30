@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-background: var(--bg);
+  --color-foreground: var(--fg);
+  --color-card: var(--card-bg);
+  --color-card-foreground: var(--card-fg);
+  --color-primary: var(--primary-bg);
+  --color-primary-foreground: var(--primary-fg);
+  --color-secondary: var(--secondary-bg);
+  --color-secondary-foreground: var(--secondary-fg);
+  --color-muted: var(--muted-bg);
+  --color-muted-foreground: var(--muted-fg);
+  --color-border: var(--border-color);
+  --color-ring: var(--ring-color);
+  --color-accent: var(--accent-bg);
+  --color-accent-foreground: var(--accent-fg);
+  --color-stellar: var(--stellar-color);
+  --font-serif: 'Instrument Serif', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+:root {
+  --bg: #f8fafc;
+  --fg: #090d16;
+  --card-bg: #ffffff;
+  --card-fg: #090d16;
+  --primary-bg: #4f46e5; /* Indigo 600 */
+  --primary-fg: #ffffff;
+  --secondary-bg: #f1f5f9;
+  --secondary-fg: #1e293b;
+  --muted-bg: #f1f5f9;
+  --muted-fg: #64748b;
+  --border-color: #e2e8f0;
+  --ring-color: #6366f1;
+  --accent-bg: #eef2ff;
+  --accent-fg: #4338ca;
+  --stellar-color: #06b6d4;
+}
+
+.dark {
+  --bg: #020617; /* Slate 950 */
+  --fg: #f8fafc;
+  --card-bg: #0b0f19;
+  --card-fg: #f8fafc;
+  --primary-bg: #6366f1; /* Indigo 500 */
+  --primary-fg: #ffffff;
+  --secondary-bg: #111827;
+  --secondary-fg: #f3f4f6;
+  --muted-bg: #0f172a;
+  --muted-fg: #94a3b8;
+  --border-color: rgba(255, 255, 255, 0.1);
+  --ring-color: #818cf8;
+  --accent-bg: rgba(99, 102, 241, 0.15);
+  --accent-fg: #a5b4fc;
+  --stellar-color: #22d3ee;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+.font-serif-editorial {
+  font-family: var(--font-serif);
+}
+
+.font-mono-code {
+  font-family: var(--font-mono);
+}
+
+/* Glassmorphism panel */
+.glass-panel {
+  background-color: rgba(var(--card-bg), 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.2);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.4);
+}
+
+/* Editorial subtle glow background */
+@keyframes aurora {
+  0% { transform: translate(-5%, -5%) rotate(0deg); }
+  50% { transform: translate(5%, 5%) rotate(180deg); }
+  100% { transform: translate(-5%, -5%) rotate(360deg); }
+}
+
+.animate-aurora {
+  animation: aurora 25s infinite linear;
+}

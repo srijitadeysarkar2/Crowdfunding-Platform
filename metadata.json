@@ -1,0 +1,6 @@
+{
+  "name": "SparkFund - Web3 Crowdfunding Platform",
+  "description": "Discover, back, and launch innovative crowdfunding campaigns with crypto and Stellar Web3 support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
