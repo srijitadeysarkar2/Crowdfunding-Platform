@@ -76,15 +76,6 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
----
-
-Made by BIBEK DAS
-
-
-
- 
-
----
 ### Smart Contract Details
 Deployed Contract Address: CADRMCVMLN2GYJFW4ZFO3O3DWIBF24MFKZKNUZKJD63PJIHFZ5DFBWOC
 Transaction hash of a contract call: 81fa43fe32fb0a9838b7852f00f2aab8fa18b165460bb49f20ebc030ca7a7789
